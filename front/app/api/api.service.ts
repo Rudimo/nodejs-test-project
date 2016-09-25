@@ -4,7 +4,7 @@ import {Http, RequestOptions, Headers} from '@angular/http';
 @Injectable()
 export default class ApiService {
 
-    private apiEndpoint = `http://localhost:8000`;
+    private apiEndpoint = `http://176.112.196.27:8000`;
 
     constructor(private http: Http) {
 
