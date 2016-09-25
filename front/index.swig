@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test job</title>
+    <base href="/">
+
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="SHORTCUT ICON" href="/images/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/stylesheets/site_build.css">
+    <link rel="stylesheet" href="/stylesheets/site_build_less.css">
+
+    <script src="/javascripts/site_build.js"></script>
+
+    <script src="/javascripts/systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err){ console.error(err); });
+    </script>
+</head>
+<body>
+
+<app>
+    Loading...
+</app>
+
+</body>
+</html>

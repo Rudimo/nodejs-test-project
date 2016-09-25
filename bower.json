@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-test-project",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Dmitry Kshevsky <rudimo@yandex.ru>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "2.2.1",
+    "bootstrap": "3.3.6"
+  },
+  "resolutions": {
+    "jquery": "2.2.1"
+  }
+}

@@ -1,0 +1,50 @@
+<!--<pre class="card card-block card-header">{{items | json}}</pre>-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form (ngSubmit)="onSubmit()">
+                <h3>Filter by date:</h3>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label for="dateFrom">From</label>
+                        <input class="form-control" id="dateFrom" type="date"
+                               [ngModelOptions]="{standalone: true}"
+                               [(ngModel)]="formData.dateFrom">
+                    </div>
+                    <div class="form-group">
+                        <label for="dateTo">To</label>
+                        <input class="form-control" id="dateTo" type="date"
+                               [ngModelOptions]="{standalone: true}"
+                               [(ngModel)]="formData.dateTo">
+                    </div>
+                    <button type="submit" class="btn btn-default">Filter</button>
+                </div>
+
+            </form>
+
+            <h3 style="margin-top: 100px">Time record list</h3>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Total time</th>
+                    <th>Notes</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody *ngIf="items">
+                <tr *ngFor="let i of items">
+                    <td>{{i.date | date: 'dd.MM.yyyy'}}</td>
+                    <td>{{i.totalTime}}h</td>
+                    <td>{{i.notes}}</td>
+                    <td>
+                        <button type="button" (click)="remove(i._id)" class="btn btn-xs btn-danger">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

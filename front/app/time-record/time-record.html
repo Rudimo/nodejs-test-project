@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row" style="margin-top: 100px">
+        <div class="col-md-4 col-md-offset-4">
+            <form (ngSubmit)="onSubmit()">
+                <h3>Add time record:</h3>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input class="form-control" id="date" type="date" required
+                           [ngModelOptions]="{standalone: true}"
+                           [(ngModel)]="formData.date">
+                </div>
+                <div class="form-group">
+                    <label for="totalTime">Total time</label>
+                    <input type="number" class="form-control" id="totalTime" placeholder="8" required
+                           [ngModelOptions]="{standalone: true}"
+                           [(ngModel)]="formData.totalTime">
+                </div>
+                <div class="form-group">
+                    <label for="notes">Notes</label>
+                    <input type="text" class="form-control" id="notes" placeholder='"Login&registration", "Another note"' required
+                           [ngModelOptions]="{standalone: true}"
+                           [(ngModel)]="formData.notes">
+                </div>
+                <button type="submit" class="btn btn-default">Save</button>
+            </form>
+        </div>
+    </div>
+</div>

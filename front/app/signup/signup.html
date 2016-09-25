@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()" class="form-signin">
+
+    <h2 class="form-signin-heading">Please register</h2>
+    <label for="inputLogin" class="sr-only">Login</label>
+    <input type="text" id="inputLogin" class="form-control" placeholder="Login"
+           [ngModelOptions]="{standalone: true}"
+           [(ngModel)]="formData.login">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+           [ngModelOptions]="{standalone: true}"
+           [(ngModel)]="formData.password">
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+</form>

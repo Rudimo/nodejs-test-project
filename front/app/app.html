@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">NodeJS Test Project</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li *ngIf="!userService.loggedIn">
+                <a [routerLink]="['/signin']">Sign In</a>
+            </li>
+            <li *ngIf="!userService.loggedIn">
+                <a [routerLink]="['/signup']">Sign Up</a>
+            </li>
+            <li *ngIf="userService.loggedIn">
+                <a [routerLink]="['/time-record']">Add time record</a>
+            </li>
+            <li *ngIf="userService.loggedIn">
+                <a [routerLink]="['/report']">Report</a>
+            </li>
+            <li *ngIf="userService.loggedIn">
+                <a (click)="logOut()">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>

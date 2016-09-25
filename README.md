@@ -1,3 +1,32 @@
+### Steps for start
+
+1. Install nodejs https://nodejs.org/en/download/
+2. Install bower: `npm i bower -g`
+3. Install Grunt: `npm i grunt-cli -g`
+4. Install TypeScript: `npm i typescript -g`
+5. Clone project
+6. Install npm dependencies: `npm i`
+7. Create `.env` file. Copy `.env-base` to `.env`
+8. Start project: `npm start`
+
+```sh
+Api  :  http://localhost:8000
+Front:  http://localhost:8001
+```
+### Testing
+Start test `npm test`
+
+### Information
+Application uses a number of open source projects to work properly:
+* Node.JS
+* Express
+* Angular 2
+* Mocha
+* Bower
+* Grunt
+* TwitterBootstrap
+
+### Description of the test task
 Test project description:
 * Project should consist of 2 parts: back-end (API) and front-end.
 * You should use mongodb database (mongoose package or any other)

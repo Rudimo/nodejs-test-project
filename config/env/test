@@ -1,0 +1,3 @@
+BASE_URL=http://localhost:9000
+
+MONGODB_URL = mongodb://localhost:27017/nodejs-test-job-test

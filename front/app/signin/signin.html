@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit()" class="form-signin">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <label for="inputLogin" class="sr-only">Email address</label>
+    <input type="text" id="inputLogin" class="form-control" placeholder="Login" required
+           [ngModelOptions]="{standalone: true}"
+           [(ngModel)]="formData.login">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required
+           [ngModelOptions]="{standalone: true}"
+           [(ngModel)]="formData.password">
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>
+
+<div class="signup-link">
+    Need an account?
+    <a [routerLink]="['/signup']">Sign Up</a>.
+</div>
