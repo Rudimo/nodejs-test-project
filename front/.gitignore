@@ -1,3 +1,4 @@
 **/*.js
 **/*.css
 !index.js
+!/public/javascripts/systemjs.config.js
