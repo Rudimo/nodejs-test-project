@@ -22,7 +22,7 @@ export default class UserService {
 
         return new Promise((resolve, reject) => {
 
-            this.http.post('http://localhost:8000/login', loginData, contentHeaders)
+            this.http.post('http://176.112.196.27:8000/login', loginData, contentHeaders)
                 .subscribe(
                     response => {
 
@@ -53,7 +53,7 @@ export default class UserService {
 
         return new Promise((resolve, reject) => {
 
-            this.http.post('http://localhost:8000/register', signUpData, contentHeaders)
+            this.http.post('http://176.112.196.27:8000/register', signUpData, contentHeaders)
                 .subscribe(
                     response => {
 
