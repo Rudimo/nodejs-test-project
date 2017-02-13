@@ -1,8 +1,3 @@
-### Live example
-
-[http://176.112.196.27:8001](http://176.112.196.27:8001)
-
-
 ### Steps for start
 
 1. Install nodejs https://nodejs.org/en/download/
